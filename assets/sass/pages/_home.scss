@@ -1,0 +1,53 @@
+.signature{
+    color:$blue-dark;
+    margin: 4rem;
+    &__img-box{
+        padding: 1rem;
+        width: 155px;
+        margin-left: auto;
+    }
+    &__img{
+        width: 100%;
+    }
+    &__main{
+        padding: 2rem;
+        border-left: 1px solid $black;
+        & div{
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__title{
+        font-size: 3rem;
+        color:$red-dark;
+    }
+    &__subtitle{
+        font-size: 2rem;
+        &--highlights{
+            color:$red-dark;
+            margin-bottom: 1rem;
+        }
+    }
+    &__text{
+        display: block;
+        color: $blue-dark;
+        margin-top: 0.7rem;
+        font-size: 1.5rem;
+        &--highlights{
+            color:$red-dark;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    .signature{
+        &__main{
+            border-left: none;
+        }
+        &__img-box{
+            padding: 1rem;
+            width: 200px;
+            margin: auto;
+        }
+    }
+}
